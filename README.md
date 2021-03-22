@@ -1,2 +1,2 @@
-# CNN_1
+# CNN
 Building CNN from scratch using Pytorch
