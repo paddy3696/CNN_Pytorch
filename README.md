@@ -1,4 +1,4 @@
-# CNN
+# Image Classification using Convolution Neural Network (CNN)
 # Fundamentals of DL course Assignment - 2 
 
 
