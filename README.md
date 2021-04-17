@@ -16,20 +16,18 @@ This project requires **Python** and the following Python libraries installed:
 
 ## Code
 - #### Convolution Neural network Class (MyNN)
-The convolution neural network is built using Pytorch with conditions on batch normalization. The   The function **fit** is the training function which contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters) is used for computing the training and the validation error along with validation accuracy. 
+The convolution neural network is built using Pytorch with conditions on batch normalization. The   The function **fit** is the contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters) is used for computing the training and the validation error along with validation accuracy. 
 
-The **train** function 
+The **train** function consists of data-preprocessing and initializing the model and its paramete.
 
 The following line of code is an example to define a model using the MyNN class:
 
 ```python
-model = MyNN(network_size=layers,network_fns=act,batch_size = 64, loss_fn = 'crossE'
-             optimizer='NADAM',regularize= 'l2',alpha = 0, wb_init = 'xavier_uniform',
-             learning_rate = 1e-3, max_epoch=5,verbose=1,seed=25)
+model = MyNN(drop_out = 0.2, batch_norm = 'Yes', filter_n = 128,  filter_org = 'double_down', hidden_out =196)
 ```
 After defining the model, the training of the model can be done using the following command:
 ```python
-model.fit(X,Y,x_valid,y_valid)
+fit(model,train_loader,val_loader,optimizer,epoch,criterion)
 ```
 - #### Wandb configuration
 Wandb is a tool for tuning the hyper-parameters of a model. The wandb sweep requires to define a sweep configuaration with hyper-parameters in a dictionary type. The following code snippet is an example of defining the wandb sweep configuration:
@@ -76,15 +74,24 @@ sweep_config = {
 }
 ```
 
-```
+```python
 sweep_id = wandb.sweep(sweep_config, entity="paddy3696", project="cnn_inat")
 ```
 - #### Train sweep function
 The function **train** is the main function called by the wandb sweep. This function contains the wandb initialization and data pre-processing.  
 
 - #### Testing
-The function **model_test** finds the accuracy of the model with test data and plots the Confusion matrix heatmap.
+The function **model_test** finds the accuracy of the model with test data.
 
+- #### Filter visualization
+The filter visualization is performed using **mapextrackt** library. feature extraction and visualization functions is used from this library. 
+
+- #### Pre - trained models
+The pre-trained models are trained used from the pytorch library. These models are initialized as a hyper-parameter. The list of pre-trained models is mentioned below:
+
+```python
+['resnet', 'alexnet', 'vgg', 'squeezenet', 'densenet', 'inception']
+```
 
 ## Run
 
