@@ -110,15 +110,16 @@ from keras.datasets import fashion_mnist
 - The training data is very split with ratio of 90:10 for training and validation. This is done to avoid Overfitting.
 - All the test, train and validation data are normalized for better performance of the neural network
 
+## Report link
+[wandb_report](https://wandb.ai/paddy3696/cnn_inat/reports/FDL-Assignment-2---Vmlldzo2MDg3Mzg?accessToken=l08ezysoh00yvd68sdpq7r78rvq5l2zjaxbjg6li81d982eu2we6xqky99wuol3r)
+
 ## Reference
-- https://ml-cheatsheet.readthedocs.io/en/latest/index.html
-- https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/
-- [Sentdex - Neural Network from scratch](https://youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
-- [CS7015- Deep Learning](https://youtube.com/playlist?list=PLyqSpQzTE6M9gCgajvQbc68Hk_JKGBAYT)
-- https://www.deeplearningbook.org/
-- https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
-
-
-
-
-
+- Udacity Deep Learning course
+- https://youtube.com/playlist?list=PLQVvvaa0QuDdeMyHEYc0gxFpYwHY2Qfdh
+- https://youtube.com/playlist?list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4
+- https://towardsdatascience.com/visualizing-convolution-neural-networks-using-pytorch-3dfa8443e74e
+- https://pypi.org/project/mapextrackt/
+- https://www.kaggle.com/sironghuang/understanding-pytorch-hooks?select=fig1.png
+- https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html
+- https://github.com/ultralytics/yolov5
+- https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/
