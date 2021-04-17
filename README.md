@@ -16,7 +16,7 @@ This project requires **Python** and the following Python libraries installed:
 
 ## Code
 - #### Convolution Neural network Class (MyNN)
-The convolution neural network is built using Pytorch with conditions on batch normalization. The   The function **fit** is the contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters) is used for computing the training and the validation error along with validation accuracy. 
+The convolution neural network is built using Pytorch with conditions on batch normalization. The function **fit** is the contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters) is used for computing the training and the validation error along with validation accuracy. 
 
 The **train** function consists of data-preprocessing and initializing the model and its paramete.
 
