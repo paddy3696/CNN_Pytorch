@@ -41,38 +41,44 @@ sweep_config = {
       'goal': 'maximize'   
     },
     'parameters': {
-        'max_epoch': {
-            'values': [20, 30]
+        'drop_out': {
+            'values': [0.2, 0.3]
         },
-        'wb_init': {
-            'values': ['he', 'xavier_uniform']
+        'batch_norm': {
+            'values': ['Yes', 'No']
+        },
+        'filter_n': {
+            'values': [64, 128]
+        
         },
         'batch_size': {
-            'values': [16, 32, 64]
+            'values': [16, 32]
         },
-        'hidden_size': {
-            'values': [32, 64, 128]
+        'filter_org': {
+            'values': ['same', 'double_up', 'double_down']
         },
-        'n_hidden': {
-            'values': [3,4,5]
+        'epoch': {
+            'values': [5,10]
         },
-        'alpha': {
-            'values': [0, 0.0005, 0.5]
-        },
-        'learning_rate': {
-            'values': [1e-3, 1e-4]
+        'data_aug': {
+            'values': ['Yes', 'No']
         },
         'optimizer': {
-            'values': ['SGD','SGDM','RMSP','ADAM','NADAM'] 
+            'values': ['SGD','ADAM'] 
         },
-        'activation': {
-            'values': ['relu','sigmoid','tanh']
+        'lr': {
+            'values': [0.1,0.01] 
+        },
+        'hidden_out': {
+            'values': [128,196] 
         },
     }
 }
 ```
-It is to be noted that these parameters can be changed and additional paramters for tuning can also be added.
 
+```
+sweep_id = wandb.sweep(sweep_config, entity="paddy3696", project="cnn_inat")
+```
 - #### Train sweep function
 The function **train** is the main function called by the wandb sweep. This function contains the wandb initialization and data pre-processing.  
 
