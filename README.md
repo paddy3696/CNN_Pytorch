@@ -15,10 +15,10 @@ This project requires **Python** and the following Python libraries installed:
 - [mapextrackt](https://pypi.org/project/mapextrackt/)
 
 ## Code
-- #### Neural network Class (MyNN)
-The neural network class contains all the functions required for training the model. The function **fit** is the training function which contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters). The activation functions (Sigmoid, tanh, relu) and weights, bias initialization (xavier, normal) are independently defined. 
+- #### Convolution Neural network Class (MyNN)
+The convolution neural network is built using Pytorch with conditions on batch normalization. The   The function **fit** is the training function which contains the neural network pipeline (Forward_prog, compute_loss, back_prop, update_parameters) is used for computing the training and the validation error along with validation accuracy. 
 
-The one hot encoding is performed to deal with categorial output variable. and it is defined as a seperate function.
+The **train** function 
 
 The following line of code is an example to define a model using the MyNN class:
 
