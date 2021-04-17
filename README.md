@@ -9,9 +9,10 @@ This project requires **Python** and the following Python libraries installed:
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
+- [Pytorch](https://pytorch.org/)
 - [wandb](https://wandb.ai/site)
-
+- [wget](https://pypi.org/project/wget/)
+- [mapextrackt](https://pypi.org/project/mapextrackt/)
 
 ## Code
 - #### Neural network Class (MyNN)
@@ -81,34 +82,34 @@ The function **model_test** finds the accuracy of the model with test data and p
 
 ## Run
 
-In a terminal or command window, navigate to the top-level project directory `NN_from_scratch/` (that contains this README) and run one of the following commands:
+In a terminal or command window, navigate to the top-level project directory `CNN_Pytorch/` (that contains this README) and run one of the following commands:
 
 ```bash
-ipython notebook MNIST_Classification.ipynb
+ipython notebook Inat_cnn_train.ipynb
 ```  
 or
 ```bash
-jupyter notebook MNIST_Classification.ipynb
+jupyter notebook Inat_cnn_train.ipynb
 ```
-The code for evaluating the perfomance of the model with MNIST Fashion data is seperately uploaded and it can be run using the following command:
+The code for evaluating the perfomance of the custom CNN model with iNaturalist dataset is seperately uploaded and it can be run using the following command:
 ```bash
-jupyter notebook MNIST_fasion_test.ipynb
+jupyter notebook Inat_cnn_test.ipynb
 ``` 
-The code for evaluating the perfomance of the model with MNIST handwriting data is seperately uploaded and it can be run using the following command:
-
+The code for evaluating the perfomance of the pretrained CNN models with iNaturalist dataset is seperately uploaded and it can be run using the following command:
 ```bash
-jupyter notebook NN_MNIST_HW.ipynb
+jupyter notebook inat_cnn_pretrained.ipynb
 ``` 
 
 ## Data
-The MNIST fashion dataset is downloaded directly from the Keras library using the following the command:
+The iNaturalist datasetis downloaded directly from the downloadable link using the following the "wget" command:
 ```python
-from keras.datasets import fashion_mnist
+wget.download('https://storage.googleapis.com/wandb_datasets/nature_12K.zip')
 ```
 ### Data Preprocessing
-- The MNIST fashion dataset contains 80k image data. The data is split in the ratio of 90:10 for training and testing respectively.
-- The training data is very split with ratio of 90:10 for training and validation. This is done to avoid Overfitting.
-- All the test, train and validation data are normalized for better performance of the neural network
+- The iNaturalist dataset contains 9999 training image data and 2000 testing.
+- The training data is very split with ratio of 90:10 for training and validation. This is done to avoid overfitting.
+- All the test, train and validation data are imported using the data loader function in torch library.
+- The transfromers function are used for resizing, cropping, normalizng the images and then convert it to tensors.
 
 ## Report link
 [wandb_report](https://wandb.ai/paddy3696/cnn_inat/reports/FDL-Assignment-2---Vmlldzo2MDg3Mzg?accessToken=l08ezysoh00yvd68sdpq7r78rvq5l2zjaxbjg6li81d982eu2we6xqky99wuol3r)
