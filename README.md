@@ -118,6 +118,7 @@ The iNaturalist datasetis downloaded directly from the downloadable link using t
 ```python
 wget.download('https://storage.googleapis.com/wandb_datasets/nature_12K.zip')
 ```
+
 ### Data Preprocessing
 - The iNaturalist dataset contains 9999 training image data and 2000 testing.
 - The training data is very split with ratio of 90:10 for training and validation. This is done to avoid overfitting.
