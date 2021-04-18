@@ -7,7 +7,6 @@
 This project requires **Python** and the following Python libraries installed:
 
 - [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [Pytorch](https://pytorch.org/)
 - [TensorFlow](https://www.tensorflow.org/install)
