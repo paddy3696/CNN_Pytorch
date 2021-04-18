@@ -133,15 +133,15 @@ wget.download('https://storage.googleapis.com/wandb_datasets/nature_12K.zip')
 - The transfromers function are used for resizing, cropping, normalizng the images and then convert it to tensors.
 
 ## Report link
-[wandb_report](https://wandb.ai/paddy3696/cnn_inat/reports/FDL-Assignment-2---Vmlldzo2MDg3Mzg?accessToken=l08ezysoh00yvd68sdpq7r78rvq5l2zjaxbjg6li81d982eu2we6xqky99wuol3r)
+[assignment2_report](https://wandb.ai/paddy3696/cnn_inat/reports/FDL-Assignment-2---Vmlldzo2MDg3Mzg?accessToken=l08ezysoh00yvd68sdpq7r78rvq5l2zjaxbjg6li81d982eu2we6xqky99wuol3r)
 
 ## Reference
 - Udacity Deep Learning course
-- https://youtube.com/playlist?list=PLQVvvaa0QuDdeMyHEYc0gxFpYwHY2Qfdh
-- https://youtube.com/playlist?list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4
+- [Sentdex Pytorch tutorials](https://youtube.com/playlist?list=PLQVvvaa0QuDdeMyHEYc0gxFpYwHY2Qfdh)
+- [Python Engineer Pytorch tutorials](https://youtube.com/playlist?list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4)
 - https://towardsdatascience.com/visualizing-convolution-neural-networks-using-pytorch-3dfa8443e74e
-- https://pypi.org/project/mapextrackt/
+- [mapextrackt](https://pypi.org/project/mapextrackt/)
 - https://stackoverflow.com/questions/55924331/how-to-apply-guided-backprop-in-tensorflow-2-0
 - https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html
-- https://github.com/ultralytics/yolov5
+- [YoloV3](https://pjreddie.com/darknet/yolo/)
 - https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/
