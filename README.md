@@ -10,6 +10,8 @@ This project requires **Python** and the following Python libraries installed:
 - [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [Pytorch](https://pytorch.org/)
+- [TensorFlow](https://www.tensorflow.org/install)
+- [OpenCV](https://pypi.org/project/opencv-python/)
 - [wandb](https://wandb.ai/site)
 - [wget](https://pypi.org/project/wget/)
 - [mapextrackt](https://pypi.org/project/mapextrackt/)
@@ -92,6 +94,8 @@ The pre-trained models are trained used from the pytorch library. These models a
 ```python
 ['resnet', 'alexnet', 'vgg', 'squeezenet', 'densenet', 'inception']
 ```
+- #### Guided Backpropogation
+The Guided backpropogation is performed using Tensorflow Keras because extracting features of each layer was not direct. Another significant reason for using Keras instead of Pytorch is to understand the difference between two libraries. The same CNN model is built completely from the scratch and fifth convolution layer is visualized using the guided propogat
 
 ## Run
 
@@ -107,6 +111,10 @@ jupyter notebook Inat_cnn_train.ipynb
 The code for evaluating the perfomance of the custom CNN model with iNaturalist dataset is seperately uploaded and it can be run using the following command:
 ```bash
 jupyter notebook Inat_cnn_test.ipynb
+``` 
+The code for guided backpropagation of the custom CNN models with iNaturalist dataset is seperately uploaded and it can be run using the following command:
+```bash
+jupyter notebook guided_backprop.ipynb
 ``` 
 The code for evaluating the perfomance of the pretrained CNN models with iNaturalist dataset is seperately uploaded and it can be run using the following command:
 ```bash
@@ -134,7 +142,7 @@ wget.download('https://storage.googleapis.com/wandb_datasets/nature_12K.zip')
 - https://youtube.com/playlist?list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4
 - https://towardsdatascience.com/visualizing-convolution-neural-networks-using-pytorch-3dfa8443e74e
 - https://pypi.org/project/mapextrackt/
-- https://www.kaggle.com/sironghuang/understanding-pytorch-hooks?select=fig1.png
+- https://stackoverflow.com/questions/55924331/how-to-apply-guided-backprop-in-tensorflow-2-0
 - https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html
 - https://github.com/ultralytics/yolov5
 - https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/
